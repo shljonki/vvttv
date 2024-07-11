@@ -1,10 +1,8 @@
 Rust Telegram Bot Library
 =========================
-[![Build Status](https://img.shields.io/travis/telegram-rs/telegram-bot/master.svg)](https://travis-ci.org/telegram-rs/telegram-bot)
-[![Tests](https://github.com/telegram-rs/telegram-bot/workflows/Tests/badge.svg)](https://github.com/telegram-rs/telegram-bot/actions?workflow=Tests)
-[![Tests](https://github.com/telegram-rs/telegram-bot/workflows/Fmt/badge.svg)](https://github.com/telegram-rs/telegram-bot/actions?workflow=Fmt)
-[![License](https://img.shields.io/github/license/telegram-rs/telegram-bot.svg)]()
-[![Crates.io](https://img.shields.io/crates/v/telegram-bot.svg)](https://crates.io/crates/telegram-bot)
+
+Telegram bot for adding youtube videos to specific playlists. Each week new playlist is created. Users can add videos to playlist by sending them inside telegram group which has this bot added. At the end of the week poll is started automatically with options that match sent video names. Users vote for best video of previous week and winning video is added to a new "winner" playlist. Bot does not allow reposts and can set how many entries can be applied by person by week.
+This bot is based on existing crates that use Telegram APIs and Youtube APIs.
 
 <table>
   <tbody>
@@ -54,17 +52,5 @@ async fn main() -> Result<(), Error> {
     Ok(())
 }
 ```
-You can find a bigger examples in the `examples`.
-
-## Usage
-This library is available via `crates.io`. In order to use it, just add this to your `Cargo.toml`:
-
-```
-telegram-bot = "0.7"
-```
-
-The library allows you to do E2E-testing of your bot easily: just specify `TELEGRAM_API_URL` environment variable to point to your fake Telegram test server.
-A lot of diagnostic information can be collected with [tracing](https://crates.io/crates/tracing) framework, see [`example/tracing.rs`](https://github.com/telegram-rs/telegram-bot/blob/master/lib/examples/tracing.rs)).
-
-## Collaboration
-Yes please! Every type of contribution is welcome: Create issues, hack some code or make suggestions. Don't know where to start? Good first issues are tagged with [up for grab](https://github.com/telegram-rs/telegram-bot/issues?q=is%3Aissue+is%3Aopen+label%3A%22up+for+grab%22).
+## Notes
+Some files were removed for security reasons
