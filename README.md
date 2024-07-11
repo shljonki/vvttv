@@ -1,7 +1,7 @@
 Rust Telegram Bot Library
 =========================
 
-Telegram bot for adding youtube videos to specific playlists. Each week new playlist is created. Users can add videos to playlist by sending them inside telegram group which has this bot added. At the end of the week poll is started automatically with options that match sent video names. Users vote for best video of previous week and winning video is added to a new "winner" playlist. Bot does not allow reposts and can set how many entries can be applied by person by week.
+Telegram bot for adding youtube videos to specific youtube playlists. Each week new playlist is created. Users can add videos to playlist by sending them inside telegram group which has this bot added. At the end of the week poll is started automatically with options that match sent video names. Users vote for best video of previous week and winning video is added to a new "winner" playlist. Bot does not allow reposts and can set how many entries can be applied by person by week.
 This bot is based on existing crates that use Telegram APIs and Youtube APIs.
 
 <table>
